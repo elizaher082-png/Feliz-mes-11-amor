@@ -1,0 +1,936 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;600&display=swap');
+
+
+body {
+
+    margin:0;
+
+    height:100vh;
+
+    background:linear-gradient(
+        135deg,
+        #b30000,
+        #001f5c
+    );
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-family:'Poppins', sans-serif;
+
+}
+
+
+.inicio {
+
+    text-align:center;
+
+    color:white;
+
+}
+
+
+h1 {
+
+    font-family:'Great Vibes', cursive;
+
+    font-size:65px;
+
+    animation:aparecer 2s;
+
+}
+
+
+
+button {
+
+    margin-top:30px;
+
+    padding:15px 45px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:white;
+
+    color:#b30000;
+
+    font-size:20px;
+
+}
+
+
+
+@keyframes aparecer{
+
+
+from{
+
+opacity:0;
+
+transform:translateY(-50px);
+
+}
+
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+
+
+#amor{
+
+    text-align:center;
+
+    color:white;
+
+}
+
+
+
+.contenedor{
+
+    display:flex;
+
+    gap:50px;
+
+    align-items:center;
+
+}
+
+
+
+.frasco{
+
+    width:180px;
+
+    height:250px;
+
+    position:relative;
+
+    cursor:pointer;
+
+    animation:agitar 2s infinite;
+
+}
+
+
+
+.tapa{
+
+    width:80px;
+
+    height:35px;
+
+    background:#b30000;
+
+    border-radius:10px 10px 5px 5px;
+
+    position:absolute;
+
+    top:0;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+}
+
+
+
+.botella{
+
+    width:160px;
+
+    height:190px;
+
+    position:absolute;
+
+    bottom:0;
+
+    left:10px;
+
+
+    background:rgba(255,255,255,0.25);
+
+    border:5px solid white;
+
+    border-radius:35px 35px 45px 45px;
+
+    overflow:hidden;
+
+}
+
+
+
+.papelitos{
+
+    position:absolute;
+
+    bottom:20px;
+
+    width:100%;
+
+    text-align:center;
+
+    font-size:38px;
+
+    animation:flotar 2s infinite;
+
+}
+
+
+
+.categorias p{
+
+    background:white;
+
+    color:#b30000;
+
+    padding:12px;
+
+    border-radius:20px;
+
+}
+
+
+
+.papel{
+
+    background:#fff8dc;
+
+    color:#8b0000;
+
+    width:280px;
+
+    padding:20px;
+
+    border-radius:20px;
+
+    margin-top:30px;
+
+    font-size:25px;
+
+    animation:abrir 0.8s;
+
+}
+
+
+
+#contador{
+
+    color:white;
+
+}
+
+
+
+@keyframes agitar{
+
+
+0%,100%{
+
+transform:rotate(0);
+
+}
+
+
+25%{
+
+transform:rotate(7deg);
+
+}
+
+
+50%{
+
+transform:rotate(-7deg);
+
+}
+
+}
+
+
+
+@keyframes flotar{
+
+50%{
+
+transform:translateY(-12px);
+
+}
+
+}
+
+
+
+@keyframes abrir{
+
+
+from{
+
+transform:scale(0);
+
+}
+
+
+to{
+
+transform:scale(1);
+
+}
+
+}
+.corazon{
+
+position:fixed;
+
+bottom:0;
+
+font-size:35px;
+
+animation:subir 3s linear;
+
+}
+
+
+
+@keyframes subir{
+
+
+from{
+
+transform:translateY(0);
+
+opacity:1;
+
+}
+
+
+to{
+
+transform:translateY(-700px);
+
+opacity:0;
+
+}
+
+}
+/* Letras más románticas */
+
+body{
+
+    font-family:'Poppins', sans-serif;
+
+}
+
+
+h1{
+
+    font-family:'Great Vibes', cursive;
+
+    font-size:75px;
+
+    letter-spacing:2px;
+
+    text-shadow:0 0 15px rgba(255,255,255,0.6);
+
+}
+
+
+
+h2{
+
+    font-family:'Poppins', sans-serif;
+
+    font-weight:600;
+
+    font-size:25px;
+
+}
+
+
+
+.categorias p{
+
+    font-family:'Poppins', sans-serif;
+
+    font-weight:600;
+
+    font-size:17px;
+
+    transition:0.3s;
+
+}
+
+
+
+.categorias p:hover{
+
+    transform:scale(1.08);
+
+}
+
+
+
+.papel{
+
+    font-family:'Great Vibes', cursive;
+
+    font-size:35px;
+
+    line-height:1.5;
+
+    text-align:center;
+
+}
+
+
+
+#contador{
+
+    font-family:'Poppins', sans-serif;
+
+    font-size:18px;
+
+    font-weight:600;
+
+}
+
+
+
+button{
+
+    font-family:'Poppins', sans-serif;
+
+    font-weight:600;
+
+    letter-spacing:1px;
+
+}
+/* Animación del papel como carta abriéndose */
+
+.papel{
+
+    background:#fff8dc;
+
+    color:#8b0000;
+
+    width:300px;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    margin-top:30px;
+
+    font-family:'Great Vibes', cursive;
+
+    font-size:35px;
+
+    text-align:center;
+
+    line-height:1.5;
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+
+    transform-origin:center;
+
+    animation:abrirCarta 1s ease;
+
+}
+
+
+
+@keyframes abrirCarta{
+
+
+0%{
+
+    opacity:0;
+
+    transform:
+
+    scale(0.2)
+
+    rotateY(90deg);
+
+}
+
+
+
+50%{
+
+    transform:
+
+    scale(1.1)
+
+    rotateY(-10deg);
+
+}
+
+
+
+100%{
+
+    opacity:1;
+
+    transform:
+
+    scale(1)
+
+    rotateY(0);
+
+}
+
+
+}
+
+
+
+
+/* Categorías estilo romántico */
+
+
+.categorias h2{
+
+    font-family:'Great Vibes', cursive;
+
+    font-size:40px;
+
+}
+
+
+
+.categorias p{
+
+
+    font-family:'Great Vibes', cursive;
+
+
+    font-size:30px;
+
+
+    background:white;
+
+
+    color:#b30000;
+
+
+    padding:15px;
+
+
+    border-radius:25px;
+
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+
+
+    cursor:pointer;
+
+
+    transition:0.4s;
+
+
+}
+
+
+
+.categorias p:hover{
+
+
+    transform:scale(1.1) rotate(2deg);
+
+
+}
+/* Botón seguir más bonito */
+
+button{
+
+    font-family:'Great Vibes', cursive;
+
+    font-size:35px;
+
+    padding:12px 45px;
+
+    border-radius:40px;
+
+    letter-spacing:1px;
+
+}
+
+
+
+/* Categorías más pequeñas */
+
+
+.categorias p{
+
+
+    font-family:'Great Vibes', cursive;
+
+
+    font-size:24px;
+
+
+    padding:8px 15px;
+
+
+    margin:10px;
+
+
+    width:230px;
+
+
+    text-align:center;
+
+
+}
+
+
+
+/* Título de categorías */
+
+
+.categorias h2{
+
+
+    font-family:'Great Vibes', cursive;
+
+    font-size:35px;
+
+}
+
+
+
+/* Frasco más grande */
+
+
+.frasco{
+
+
+    width:230px;
+
+    height:320px;
+
+}
+
+
+
+.tapa{
+
+
+    width:100px;
+
+    height:45px;
+
+}
+
+
+
+.botella{
+
+
+    width:210px;
+
+    height:250px;
+
+    left:10px;
+
+}
+
+
+
+.papelitos{
+
+
+    font-size:50px;
+
+}
+/* Ajuste para celular */
+
+.contenedor{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+    align-items:center;
+
+}
+
+
+
+/* Frasco completo en pantalla */
+
+.frasco{
+
+    width:170px;
+
+    height:240px;
+
+    margin-top:20px;
+
+}
+
+
+
+.tapa{
+
+    width:75px;
+
+    height:30px;
+
+}
+
+
+
+.botella{
+
+    width:150px;
+
+    height:190px;
+
+    left:10px;
+
+}
+
+
+
+.papelitos{
+
+    font-size:35px;
+
+}
+
+
+
+/* Categorías más cómodas en celular */
+
+
+.categorias{
+
+    width:90%;
+
+}
+
+
+
+.categorias p{
+
+    width:auto;
+
+    font-size:23px;
+
+    padding:10px;
+
+    margin:8px;
+
+}
+
+
+
+/* Papelito que aparece */
+
+.papel{
+
+    width:260px;
+
+    font-size:30px;
+
+}
+
+
+
+@media(max-width:600px){
+
+
+h1{
+
+    font-size:55px;
+
+}
+
+
+button{
+
+    font-size:30px;
+
+}
+
+
+}
+/* Papel saliendo del frasco */
+
+.papel{
+
+    position:relative;
+
+    background:#fff8dc;
+
+    color:#8b0000;
+
+    width:260px;
+
+    min-height:130px;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    margin-top:30px;
+
+
+    font-family:'Great Vibes', cursive;
+
+    font-size:30px;
+
+    text-align:center;
+
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.3);
+
+
+    animation:sacarCarta 1.2s ease;
+
+    transform-origin:bottom center;
+
+}
+
+
+
+@keyframes sacarCarta{
+
+
+0%{
+
+    opacity:0;
+
+    transform:
+
+    translateY(80px)
+
+    scale(0.3)
+
+    rotate(15deg);
+
+}
+
+
+
+50%{
+
+    transform:
+
+    translateY(-20px)
+
+    scale(1.05)
+
+    rotate(-5deg);
+
+}
+
+
+
+100%{
+
+    opacity:1;
+
+    transform:
+
+    translateY(0)
+
+    scale(1)
+
+    rotate(0);
+
+}
+
+}
+.agitar{
+
+animation:agitarFuerte 0.8s;
+
+}
+
+
+
+@keyframes agitarFuerte{
+
+
+0%{
+
+transform:rotate(0);
+
+}
+
+
+20%{
+
+transform:rotate(15deg);
+
+}
+
+
+40%{
+
+transform:rotate(-15deg);
+
+}
+
+
+60%{
+
+transform:rotate(12deg);
+
+}
+
+
+80%{
+
+transform:rotate(-12deg);
+
+}
+
+
+100%{
+
+transform:rotate(0);
+
+}
+
+
+}
+@keyframes cartaFinal{
+
+from{
+
+transform:scale(0.5) rotateY(90deg);
+
+opacity:0;
+
+}
+
+
+to{
+
+transform:scale(1) rotateY(0);
+
+opacity:1;
+
+}
+
+}
